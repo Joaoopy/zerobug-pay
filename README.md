@@ -68,7 +68,7 @@ zerobug-pay/
 
 ### 1. Bot do Discord
 
-Igual ao projeto anterior — Discord Developer Portal → criar aplicação → copiar `DISCORD_TOKEN` e `CLIENT_ID` → ativar **Server Members Intent** e **Message Content Intent** (esse último é novo e obrigatório, pois o bot lê mensagens do ticket para extrair produto/valor).
+No Discord Developer Portal: criar a aplicação → copiar `DISCORD_TOKEN` e `CLIENT_ID` → ativar **Server Members Intent** e **Message Content Intent** (esse último é novo e obrigatório, pois o bot lê mensagens do ticket para extrair produto/valor).
 
 Convide o bot com os scopes `bot` + `applications.commands` e as permissões: `Send Messages`, `Embed Links`, `Read Message History`, `Attach Files`, `Use Slash Commands`.
 
@@ -152,7 +152,7 @@ Se tudo estiver certo, vai aparecer:
 
 ### Se a Wispbyte não liberar porta HTTP pública
 
-Nesse caso, você vai precisar rodar **só o servidor de webhook** em outro lugar que aceite (ex: Render Web Service, que tem free tier voltado exatamente para isso). O bot do Discord continua na Wispbyte normalmente; só o `webhooks/mercadopago.webhook.js` precisaria rodar separado, com os dois processos compartilhando o mesmo banco de dados (ou se comunicando via uma API simples). Se chegar nesse ponto, me avise para adaptarmos a arquitetura.
+Nesse caso, você vai precisar rodar **só o servidor de webhook** em outro lugar que aceite (ex: Render Web Service, que tem free tier voltado exatamente para isso). O bot do Discord continua na Wispbyte normalmente; só o `webhooks/mercadopago.webhook.js` precisaria rodar separado, com os dois processos compartilhando o mesmo banco de dados (ou se comunicando via uma API simples).
 
 ---
 
